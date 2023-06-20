@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <h1 class="text-5xl text-center mt-10">Let's Get Some <span class="font-semibold text-amber-500">Money!!!</span>
+    </h1>
+    <main class="w-3/4 mx-auto gap-4">
+        <section class="mt-10">
+            <div class="grid grid-cols-3 gap-4">
+                <div class="bg-yellow-500 p-8 rounded">
+                    <p class="text-2xl text-white">Deposite</p>
+                    <p class="text-4xl text-white">$<span id="deposit-totall">00</span></p>
+                </div>
+                <div class="bg-red-500 p-8 rounded">
+                    <p class="text-2xl text-white">Widthraw</p>
+                    <p class="text-4xl text-white">$<span id="widthraw-totall">00</span></p>
+                </div>
+                <div class="bg-green-500 p-8 rounded">
+                    <p class="text-2xl text-white">Balance</p>
+                    <p class="text-4xl text-white">$<span id="balance-totall">1100</span></p>
+                </div>
+
+            </div>
+
+        </section>
+        <section class="mt-10">
+            <div class="grid grid-cols-2 gap-4 ">
+                <div class="bg-rose-500 p-10 rounded">
+                    <h3 class="text-2xl text-white">Please Deposite</h3>
+                    <input id="deposit-input" class=" block w-3/4 rounded mb-3 px-3" type="text"
+                        placeholder="How Much Dollar You Want To Deposite">
+                    <button id="deposit-button"
+                        class="bg-yellow-500 px-4 py-2 rounded text-white font-semibold	">Submit</button>
+
+                </div>
+                <div class="bg-rose-500 p-10 rounded">
+                    <h3 class="text-2xl text-white">Please Widthraw</h3>
+                    <input id="widthraw-input" class=" block w-3/4 rounded mb-3 px-3 " type="text"
+                        placeholder="How Much Dollar You Want To Widthraw">
+                    <button id="widthraw-button"
+                        class="bg-yellow-500 px-4 py-2 rounded text-white font-semibold	">Submit</button>
+
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <script src="js/banking.js"></script>
+
+</body>
+
+</html>
